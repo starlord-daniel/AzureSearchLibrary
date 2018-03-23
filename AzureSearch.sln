@@ -5,6 +5,19 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSearch", "AzureSearch\AzureSearch.csproj", "{6BAD3C4C-182A-4DD6-909C-ACD3C10243F7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{38F63244-C2DC-41D8-BB0F-FF40F7FDF2D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{EABD07A0-685D-43A2-B952-C5F58426AB6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAzureSearchBot", "SimpleAzureSearchBot\SimpleAzureSearchBot.csproj", "{F798BF20-2A48-48A8-BA8D-A043539CCB45}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6BAD3C4C-182A-4DD6-909C-ACD3C10243F7} = {6BAD3C4C-182A-4DD6-909C-ACD3C10243F7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSearchDialogBot", "AzureSearchDialogBot\AzureSearchDialogBot.csproj", "{DACE44FE-DF99-4CA0-8B85-22EE85CC022A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningAzureSearchBot", "LearningAzureSearchBot\LearningAzureSearchBot.csproj", "{A497D802-621A-41DD-90DE-19CC37AD77B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +28,27 @@ Global
 		{6BAD3C4C-182A-4DD6-909C-ACD3C10243F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BAD3C4C-182A-4DD6-909C-ACD3C10243F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BAD3C4C-182A-4DD6-909C-ACD3C10243F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F798BF20-2A48-48A8-BA8D-A043539CCB45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F798BF20-2A48-48A8-BA8D-A043539CCB45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F798BF20-2A48-48A8-BA8D-A043539CCB45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F798BF20-2A48-48A8-BA8D-A043539CCB45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACE44FE-DF99-4CA0-8B85-22EE85CC022A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACE44FE-DF99-4CA0-8B85-22EE85CC022A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACE44FE-DF99-4CA0-8B85-22EE85CC022A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACE44FE-DF99-4CA0-8B85-22EE85CC022A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A497D802-621A-41DD-90DE-19CC37AD77B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A497D802-621A-41DD-90DE-19CC37AD77B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A497D802-621A-41DD-90DE-19CC37AD77B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A497D802-621A-41DD-90DE-19CC37AD77B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6BAD3C4C-182A-4DD6-909C-ACD3C10243F7} = {38F63244-C2DC-41D8-BB0F-FF40F7FDF2D0}
+		{F798BF20-2A48-48A8-BA8D-A043539CCB45} = {EABD07A0-685D-43A2-B952-C5F58426AB6E}
+		{DACE44FE-DF99-4CA0-8B85-22EE85CC022A} = {EABD07A0-685D-43A2-B952-C5F58426AB6E}
+		{A497D802-621A-41DD-90DE-19CC37AD77B9} = {EABD07A0-685D-43A2-B952-C5F58426AB6E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0D0879F-4102-4A1B-A22F-E10538003D66}
