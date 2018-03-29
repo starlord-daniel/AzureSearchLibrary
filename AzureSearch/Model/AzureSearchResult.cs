@@ -6,7 +6,6 @@ namespace AzureSearch.Model
     [Serializable]
     public class AzureSearchResult
     {
-
         public string odatacontext { get; set; }
         public Value[] value { get; set; }
     }
@@ -23,6 +22,7 @@ namespace AzureSearch.Model
 
         public string answer { get; set; }
 
+        [JsonProperty(PropertyName = "follow_up")]
         public int followup { get; set; }
     }
 }

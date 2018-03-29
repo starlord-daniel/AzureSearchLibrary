@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace AzureSearch.Api
 {
+    [Serializable]
     public class SearchApi
     {
         private string _searchName;
@@ -66,9 +67,9 @@ namespace AzureSearch.Api
         /// </summary>
         /// <returns></returns>
         private (string result, bool validated) ValidateCredentials()
-        {
+        { 
             List<string> credentialList = new List<string> { _searchName, _searchKey, _indexName };
-            Regex searchNamePattern = new Regex(".*.search.windows.net");
+            Regex searchNamePattern = new Regex(".*[.]search[.]windows[.]net");
 
             if (credentialList.All(x => string.IsNullOrEmpty(x)))
             {
