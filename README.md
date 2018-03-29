@@ -1,6 +1,8 @@
 # Azure Search Library
 A library for [Azure Search](https://docs.microsoft.com/en-us/azure/search/) that helps you build a bot with it.
 
+You can find the Nuget package here: https://www.nuget.org/packages/Bot.AzureSearch/
+
 # How to use it
 Take a look at the samples. They serve 2 use cases: 
 1. Simply integrating Azure Search into your bot -> [SimpleAzureSearchBot](https://github.com/starlord-daniel/AzureSearchLibrary/tree/master/SimpleAzureSearchBot)
