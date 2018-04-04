@@ -15,25 +15,25 @@ The library is built for the Bot Builder v3. To get started, take a look at the 
 
 If your bot is set up, you can import the library by installing its [Nuget package](https://www.nuget.org/packages/Bot.AzureSearch/). To do this in Visual Studio, go to your project, right click on it and choose: "Manage Nuget packages".
 
-![Manage Nuget](\images\StepByStep\ManageNuget.png)
+![Manage Nuget](images/StepByStep/ManageNuget.png)
 
 Then search for Bot.AzureSearch in the Browse tab view. 
 
-![Nuget Search](\images\StepByStep\NugetSearch.png)
+![Nuget Search](images/StepByStep/NugetSearch.png)
 
 Install the package by clicking: "Install". This will also download additional packages that the library builds on.
 
-![Install Nuget](\images\StepByStep\InstallNuget.png)
+![Install Nuget](images/StepByStep/InstallNuget.png)
 
 ## Use the package for simple searches
 
 To do simple searches in a question-response fashion, you need to create a **SearchApi** object with the credentials of your Azure Search service. You need the Azure Search name, key and index name. These can be found on the [Azure Portal](https://portal.azure.com). 
 
-![Azure Search Credentials](\images\AzurePortal\AzureSearchCredentials.png)
+![Azure Search Credentials](images/AzurePortal/AzureSearchCredentials.png)
 
 **Please note:** The search name is the complete  without "https://", not just the custom name. For example: *mysearch.search.windows.net* not just *mysearch*
 
-This is an extract from the RootDialog of the[SimpleAzureSearchBot](\SimpleAzureSearchBot) which shows a way of implementing this behaviour: 
+This is an extract from the RootDialog of the[SimpleAzureSearchBot](https://github.com/starlord-daniel/AzureSearchLibrary/tree/master/SimpleAzureSearchBot) which shows a way of implementing this behaviour: 
 
 ```csharp
 public class RootDialog : IDialog<object>
@@ -93,7 +93,7 @@ To generate dialogs, Azure Search is used as an entry point for the interaction 
 
 ### Implementation
 
-The RootDialog from the [AzureSearchDialogBot](\AzureSearchDialogBot) shows an example on how to implement the afforementioned behaviour:
+The RootDialog from the [AzureSearchDialogBot](https://github.com/starlord-daniel/AzureSearchLibrary/tree/master/AzureSearchDialogBot) shows an example on how to implement the afforementioned behaviour:
 
 ```csharp
 [Serializable]
